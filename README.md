@@ -14,4 +14,9 @@ Para la realizacion de este proyecto:
         - @XmlElementWrapper: que hará de contenedor para una lista de Estudiante, dentro de la clase Curso. Debe de ir seguido de su @XmlElement para indicarle que elementos irán dentro
 
     4º Para la depuración:
+        4.1 Se prueban los métodos marshal y unmarshal, para ello el Main.java, se modifica, añadiendo un nuevo estudiante.
+        4.2 Depuración del código (img1)
+        4.3 Se han puesto los puntos de interrupción (img2, img3)
+            En mi caso, tenia errores con las dependecias, para ello se cambiaron, ahora si no daria error a la hora de la depuracion (img4, img5)
+        4.4 
         
