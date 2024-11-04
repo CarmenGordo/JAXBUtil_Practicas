@@ -18,5 +18,7 @@ Para la realizacion de este proyecto:
         4.2 Depuración del código (img1)
         4.3 Se han puesto los puntos de interrupción (img2, img3)
             En mi caso, tenia errores con las dependecias, para ello se cambiaron, ahora si no daria error a la hora de la depuracion (img4, img5)
-        4.4 
+        4.4 Quitar una anotacion (img6). Al ejecutar el programa, habiendo quitado la anotación @XmlRootElement, el mismo detecta que hay un problema, indicando que es lo que necesita; esto hace que JAXB no puede identificarla como un elemento raíz. La solucion para este es poner la anotacion correspondiente. 
+        4.5 Datos incompatibles (img7). Indica que hay un error, ya que nombre lo definimos principalmente como un String y luego en su metodo getNombre(), lo llamamos como un Intenger. Esto hace un error de lectura de los datos; para corregirlo hay que poner el tipo de dato de la varible, justo como se ha definido a su inicio.
+        
         
