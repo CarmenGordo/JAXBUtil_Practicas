@@ -22,3 +22,9 @@ Para la realizacion de este proyecto:
         4.5 Datos incompatibles (img7). Indica que hay un error, ya que nombre lo definimos principalmente como un String y luego en su metodo getNombre(), lo llamamos como un Intenger. Esto hace un error de lectura de los datos; para corregirlo hay que poner el tipo de dato de la varible, justo como se ha definido a su inicio.
         
         
+    5º Consideraciones importantes:
+        5.1 Uso de serialVersionUID, para ello se añade en la clase Estudiante
+        5.2 Para el manejo de colecciones, se ha usado el @XmlElementWrapper en la clase Curso, para controlas la lista de Estudiante
+        5.3 Para el uso de NamespacesXML, en JAXB, se usa para que no haya conflictos con los nombres de los elementos y los atributos
+        5.4 La validación del unmarshalling, comprueba que si se puede deserializar el estudiante o no, pasando de un archivo XML a un objeto java. Para ello, se usa SchemaFactory, que es una clase para la validacion del XML, este permite usar Schema, para configurar varias propiedades que controlan cómo se realiza la validación
+        5.5 Para que los errores se detecten con los metodos de marshal (serialización) o de un unmarshal (deserialización)gº

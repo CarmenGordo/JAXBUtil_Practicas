@@ -2,10 +2,12 @@ package org.example;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 //definir a "estudiante" como el elemento raiz del XML
-@XmlRootElement
-public class Estudiante {
+@XmlRootElement(name = "estudiante", namespace = "http://example.org/estudiantes")
+public class Estudiante implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String nombre;
     private int edad;
@@ -20,7 +22,7 @@ public class Estudiante {
     }
 
     //@XmlElement : define nombre como un elemento
-    @XmlElement
+    @XmlElement(namespace = "http://example.org/estudiantes")
     public String getNombre() {
         return nombre;
     }
@@ -29,7 +31,7 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
-    @XmlElement
+    @XmlElement(namespace = "http://example.org/estudiantes")
     public int getEdad() {
         return edad;
     }
@@ -38,7 +40,7 @@ public class Estudiante {
         this.edad = edad;
     }
 
-    @XmlElement
+    @XmlElement(namespace = "http://example.org/estudiantes")
     public String getMatricula() {
         return matricula;
     }

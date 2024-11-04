@@ -1,5 +1,7 @@
 package org.example;
 
+import org.xml.sax.SAXException;
+
 import javax.xml.bind.JAXBException;
 import java.io.File;
 
@@ -16,6 +18,8 @@ public class Main {
             System.out.println("Estudiante desde XML: " + estudianteDesdeXML);
         } catch (JAXBException e) {
             e.printStackTrace();
+        } catch (SAXException e) {
+            throw new RuntimeException(e);
         }
     }
 }
